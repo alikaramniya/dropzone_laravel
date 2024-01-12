@@ -1,3 +1,4 @@
+```
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 <head>
@@ -51,11 +52,12 @@
     </script>
 </body>
 </html>
+```
 
 
+#### این متد میاد و اون فایل رو برات توی جدول ذخیره میکنه و تمام
 
-// این متد میاد و اون فایل رو برات توی جدول ذخیره میکنه و تمام
-
+```
 public function upload(Request $request)
 {
     $file = $request->file('file');
@@ -69,3 +71,4 @@ public function upload(Request $request)
 
     return response(true, 200);
 }
+```
